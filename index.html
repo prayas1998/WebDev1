@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Balsamiq Sans', cursive;
+
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            background: url('images/gym.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            filter: invert(100%);
+            /* Invert fucntion of css to invert color of image*/
+            width: 130px;
+        }
+
+        .left div {
+            line-height: 0px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 800px;
+            margin: 10px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 24px;
+            right: 15px;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            font-size: 24px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            padding: 24px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            font-family: 'Balsamiq Sans', cursive;
+            margin: 0px 10px;
+            padding: 4px 14px;
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(113, 112, 112);
+            cursor: pointer;
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 19px;
+            width: 41%;
+            padding: 30px;
+            margin: 150px 35px;
+        }
+        .form-group input{
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 18px;
+            text-align: center;
+            display: block;
+            width: 265px;
+            padding: 4px;
+            margin: 3px auto;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+        .form-group button{
+            display: block;
+            width:272px;
+            margin:7px auto;
+            padding: 4px;
+        }
+        .container h1{ 
+            text-align: center;
+        }
+        .container2{
+            position: absolute;
+            right: 41px;
+            top: 223px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: inline-block;
+            width: 33%;
+            margin: 0px auto;
+            padding: 50px;
+        }
+        .container2 h1{
+            text-align: center;;
+        }
+        .form2 input{
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 18px;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+            margin-left: 80px;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin-top: 10px;
+
+        }
+        .form2 button{
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+        #height input{
+            display:inline-block;
+            width: 100px;
+            margin-left: 50px;
+        }
+        .form2 div{
+            margin-left: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="images/weight-1399281_1280.png" alt="">
+            <div>
+                Fitness Club
+            </div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Join the best gym of Gurugram now!</h1>
+        <form action="noaction.php" class="form-group">
+            <div>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Your Phone Number">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Your E-mail">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="container2">
+        <h1>Check your BMI here!</h1>
+        <form action="noaction.php" class="form2">
+            <div>
+                Weight: <input type="text" placeholder="Enter your weight (in kg)">
+            </div>
+            <div id="height">
+                Height: <input type="text" placeholder="feet"> <input type="text" placeholder="inches">
+            </div>
+            <button class="btn">Calculate BMI</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
